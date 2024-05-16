@@ -5,9 +5,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import Link from "next/link";
 // internal
-import slider_img_1 from "@assets/img/slider/slider-img-1.png";
-import slider_img_2 from "@assets/img/slider/slider-img-2.png";
-import slider_img_3 from "@assets/img/slider/slider-img-3.png";
+import slider_img_1 from "@assets/img/home-banner.png";
+// import slider_img_2 from "@assets/img/slider/slider-img-2.png";
+// import slider_img_3 from "@assets/img/slider/slider-img-3.png";
 import shape_1 from "@assets/img/slider/shape/slider-shape-1.png";
 import shape_2 from "@assets/img/slider/shape/slider-shape-2.png";
 import shape_3 from "@assets/img/slider/shape/slider-shape-3.png";
@@ -18,60 +18,42 @@ import { ArrowRightLong, SliderNextBtn, SliderPrevBtn, TextShape } from "@/svg";
 const sliderData = [
   {
     id: 1,
-    pre_title: { text: "Starting at", price: 274 },
-    title: "The best tablet Collection 2023",
+    title: "We Expert In",
     subtitle: {
-      text_1: "Exclusive offer ",
-      percent: 35,
-      text_2: "off this week",
+      text_1: "Ac Repair and Maintenance",
+      text_2: "Handyman",
+      text_3: "Plumber",
+      text_4: "Carpenter",
+      text_5: "Painter",
+      text_6: "Electrician",
     },
     img: slider_img_1,
     green_bg: true,
-  },
-  {
-    id: 2,
-    pre_title: { text: "Starting at", price: 999 },
-    title: "The best note book collection 2023",
-    subtitle: {
-      text_1: "Exclusive offer ",
-      percent: 10,
-      text_2: "off this week",
-    },
-    img: slider_img_2,
-    green_bg: true,
-  },
-  {
-    id: 3,
-    pre_title: { text: "Starting at", price: 999 },
-    title: "The best note book collection 2023",
-    subtitle: {
-      text_1: "Exclusive offer ",
-      percent: 10,
-      text_2: "off this week",
-    },
-    img: slider_img_3,
-    is_light: true,
   },
 ];
 
 function Shape({ img, num }) {
   return (
-    <Image className={`tp-slider-shape-${num}`} src={img} alt="slider-shape" priority />
+    <Image
+      className={`tp-slider-shape-${num}`}
+      src={img}
+      alt="slider-shape"
+      priority
+    />
   );
 }
 
 const HomeHeroSlider = () => {
-  const [active,setActive] = useState(false);
+  const [active, setActive] = useState(false);
 
   // handleActiveIndex
   const handleActiveIndex = (index) => {
-    if(index === 2){
-      setActive(true)
+    if (index === 2) {
+      setActive(true);
+    } else {
+      setActive(false);
     }
-    else {
-      setActive(false)
-    }
-  }
+  };
   return (
     <>
       <section className="tp-slider-area p-relative z-index-1">
@@ -113,30 +95,56 @@ const HomeHeroSlider = () => {
                 <div className="row align-items-center">
                   <div className="col-xl-5 col-lg-6 col-md-6">
                     <div className="tp-slider-content p-relative z-index-1">
-                      <span>
-                        {item.pre_title.text} <b>${item.pre_title.text}</b>
-                      </span>
                       <h3 className="tp-slider-title">{item.title}</h3>
                       <p>
-                        {item.subtitle.text_1}
                         <span>
-                          -{item.subtitle.percent}%
+                          {item.subtitle.text_1}
                           <TextShape />
-                        </span>{" "}
-                        {item.subtitle.text_2}
+                        </span>
                       </p>
-
+                      <p>
+                        <span>
+                          {item.subtitle.text_2}
+                          <TextShape />
+                        </span>
+                      </p>
+                      <p>
+                        <span>
+                          {item.subtitle.text_3}
+                          <TextShape />
+                        </span>
+                      </p>
+                      <p>
+                        <span>
+                          {item.subtitle.text_4}
+                          <TextShape />
+                        </span>
+                      </p>
+                      <p>
+                        <span>
+                          {item.subtitle.text_5}
+                          <TextShape />
+                        </span>
+                      </p>
+                      <p>
+                        <span>
+                          {item.subtitle.text_6}
+                          <TextShape />
+                        </span>
+                      </p>
                       <div className="tp-slider-btn">
-                        <Link href="/shop" className="tp-btn tp-btn-2 tp-btn-white">
-                          Shop Now
-                          {" "} <ArrowRightLong />
+                        <Link
+                          href="/services"
+                          className="tp-btn tp-btn-2 tp-btn-white"
+                        >
+                          Explore More <ArrowRightLong />
                         </Link>
                       </div>
                     </div>
                   </div>
                   <div className="col-xl-7 col-lg-6 col-md-6">
                     <div className="tp-slider-thumb text-end">
-                      <Image src={item.img} alt="slider-img" />
+                      <Image src={item.img} alt="slider-img" width={400} />
                     </div>
                   </div>
                 </div>
