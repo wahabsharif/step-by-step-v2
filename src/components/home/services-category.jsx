@@ -67,6 +67,7 @@ const ServicesCategory = () => {
   return (
     <section className="tp-product-category pt-60 pb-15">
       <div className="container">
+        <h2 className="tp-section-title text-center">Our Top Rated Services</h2>
         <div className="row row-cols-xl-6 row-cols-lg-6 row-cols-md-4">
           {content}
         </div>

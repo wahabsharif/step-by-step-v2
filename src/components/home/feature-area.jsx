@@ -5,6 +5,7 @@ const FeatureArea = () => {
   return (
     <section className="tp-feature-area tp-feature-border-radius pb-70">
       <div className="container">
+        <h3 className="tp-section-title text-center">Our Feature</h3>
         <div className="row gx-1 gy-1 gy-xl-0">
           {feature_data.map((item, i) => (
             <div key={i} className="col-xl-3 col-lg-6 col-md-6 col-sm-6">
