@@ -14,7 +14,7 @@ import Wrapper from "@/layout/wrapper";
 // import BlogArea from "@/components/blog/electronic/blog-area";
 // import InstagramArea from "@/components/instagram/instagram-area";
 // import CtaArea from "@/components/cta/cta-area";
-// import Footer from "@/layout/footers/footer";
+import Footer from "@/layout/footers/footer";
 
 export default function Home() {
   return (
@@ -34,7 +34,7 @@ export default function Home() {
       {/* <BlogArea/> */}
       {/* <InstagramArea/> */}
       {/* <CtaArea/> */}
-      {/* <Footer /> */}
+      <Footer />
     </Wrapper>
   );
 }
