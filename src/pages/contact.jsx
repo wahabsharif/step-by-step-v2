@@ -11,11 +11,11 @@ const ContactPage = () => {
   return (
     <Wrapper>
       <SEO pageTitle="Contact" />
-      <HeaderTwo style_2={true} />
+      <HeaderTwo />
       <ContactBreadcrumb />
-      <ContactArea/>
-      <ContactMap/>
-      <Footer primary_style={true} />
+      <ContactArea />
+      <ContactMap />
+      <Footer />
     </Wrapper>
   );
 };

@@ -34,11 +34,19 @@ const ContactArea = () => {
                       </span>
                     </div>
                     <div className="tp-contact-info-content">
-                      <p data-info="mail">
-                        <a href="mailto:contact@shofy.com">contact@shofy.com</a>
+                      <p>
+                        <a href="mailto:info@stepbystepllc.com">
+                          info@stepbystepllc.com
+                        </a>
                       </p>
-                      <p data-info="phone">
-                        <a href="tel:670-413-90-762">+670 413 90 762</a>
+                      <p>
+                        <a href="tel:+971542474720">+(971) 54 247 4720</a>
+                      </p>
+                      <p>
+                        <a href="tel:+971542474721">+(971) 54 247 4721</a>
+                      </p>
+                      <p>
+                        <a href="tel:+971558982347">+(971) 55 898 2347</a>
                       </p>
                     </div>
                   </div>
@@ -50,11 +58,10 @@ const ContactArea = () => {
                     </div>
                     <div className="tp-contact-info-content">
                       <p>
-                        <a
-                          href="https://www.google.com/maps/place/New+York,+NY,+USA/@40.6976637,-74.1197638,11z/data=!3m1!4b1!4m6!3m5!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728!16zL20vMDJfMjg2"
-                          target="_blank"
-                        >
-                          84 sleepy hollow st. <br /> jamaica, New York 1432
+                        <a href="#">
+                          Dubai.
+                          <br />
+                          United Arab Emirates.
                         </a>
                       </p>
                     </div>
