@@ -3,7 +3,7 @@ import Header from "@/layout/headers/header-2";
 import Wrapper from "@/layout/wrapper";
 import ServicesCategory from "@/components/home/services-category";
 import HomeBanner from "@/components/home/home-banner";
-// import FeatureArea from "@/components/features/feature-area";
+import FeatureArea from "@/components/home/feature-area";
 // import ProductArea from "@/components/products/electronics/product-area";
 // import BannerArea from "@/components/banner/banner-area";
 // import OfferProducts from "@/components/products/electronics/offer-products";
@@ -23,7 +23,7 @@ export default function Home() {
       <Header />
       <HomeBanner />
       <ServicesCategory />
-      {/* <FeatureArea/> */}
+      <FeatureArea />
       {/* <ProductArea/> */}
       {/* <BannerArea/> */}
       {/* <OfferProducts/> */}
