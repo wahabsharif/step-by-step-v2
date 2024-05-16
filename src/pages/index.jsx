@@ -15,6 +15,7 @@ import FeatureArea from "@/components/home/feature-area";
 // import InstagramArea from "@/components/instagram/instagram-area";
 // import CtaArea from "@/components/cta/cta-area";
 import Footer from "@/layout/footers/footer";
+import Areas from "@/components/home/areas";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <HomeBanner />
       <ServicesCategory />
       <FeatureArea />
+      <Areas />
       {/* <ProductArea/> */}
       {/* <BannerArea/> */}
       {/* <OfferProducts/> */}

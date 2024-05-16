@@ -1,0 +1,18 @@
+@use "../utils" as *;
+
+/*----------------------------------------*/
+/*  2.14 Areas
+/*----------------------------------------*/
+
+// Add this to your _areas.scss file
+.tp-area-list p {
+  display: inline-block;
+  margin: 0.5rem 6px;
+  background: #ec3434;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  padding: 6px 20px;
+}

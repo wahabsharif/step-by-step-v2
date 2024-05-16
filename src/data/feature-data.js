@@ -7,7 +7,7 @@ export const feature_data = [
   },
   {
     icon: <Refund />,
-    title: "Reasonable Prices",
+    title: "Transparent pricing",
   },
   {
     icon: <Discount />,
