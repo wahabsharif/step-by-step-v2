@@ -1,8 +1,8 @@
 import SEO from "@/components/seo";
 import Header from "@/layout/headers/header-2";
 import Wrapper from "@/layout/wrapper";
-// import ElectronicCategory from "@/components/categories/electronic-category";
-import HomeHeroSlider from "@/components/hero-banner/home-hero-slider";
+import ServicesCategory from "@/components/home/services-category";
+import HomeBanner from "@/components/home/home-banner";
 // import FeatureArea from "@/components/features/feature-area";
 // import ProductArea from "@/components/products/electronics/product-area";
 // import BannerArea from "@/components/banner/banner-area";
@@ -21,8 +21,8 @@ export default function Home() {
     <Wrapper>
       <SEO pageTitle="Home" />
       <Header />
-      <HomeHeroSlider />
-      {/* <ElectronicCategory/> */}
+      <HomeBanner />
+      <ServicesCategory />
       {/* <FeatureArea/> */}
       {/* <ProductArea/> */}
       {/* <BannerArea/> */}

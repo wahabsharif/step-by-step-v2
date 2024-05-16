@@ -43,7 +43,7 @@ function Shape({ img, num }) {
   );
 }
 
-const HomeHeroSlider = () => {
+const HomeBanenr = () => {
   const [active, setActive] = useState(false);
 
   // handleActiveIndex
@@ -166,4 +166,4 @@ const HomeHeroSlider = () => {
   );
 };
 
-export default HomeHeroSlider;
+export default HomeBanenr;
