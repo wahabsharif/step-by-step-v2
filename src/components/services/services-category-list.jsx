@@ -1,39 +1,30 @@
 import React from "react";
-import { useRouter } from "next/router";
-// internal
-import ErrorMsg from "@/components/common/error-msg";
-import { useGetProductTypeCategoryQuery } from "@/redux/features/categoryApi";
-import CategoryListLoader from "@/components/loader/home/category-list-loader";
 
-const ServicesCategoryList = () => {
-  const {
-    data: categories,
-    isError,
-    isLoading,
-  } = useGetProductTypeCategoryQuery("electronics");
-  const router = useRouter();
+// import local data
+import categoriesData from "@/data/categoriesData";
+
+const ServicesCategoryList = ({ onSelectCategory }) => {
+  // simulate the loading state
+  const isLoading = false;
+  const isError = false;
+  const categories = { result: categoriesData };
 
   // handle category route
   const handleCategoryRoute = (title) => {
-    router.push(
-      `/shop?category=${title
-        .toLowerCase()
-        .replace("&", "")
-        .split(" ")
-        .join("-")}`
-    );
+    onSelectCategory(title);
   };
+
   // decide what to render
   let content = null;
 
   if (isLoading) {
-    content = <CategoryListLoader loading={isLoading} />;
+    content = <div>Loading...</div>; // Replace with your loader component
   }
   if (!isLoading && isError) {
-    content = <ErrorMsg msg="There was an error" />;
+    content = <div>There was an error</div>; // Replace with your error message component
   }
   if (!isLoading && !isError && categories?.result?.length === 0) {
-    content = <ErrorMsg msg="No Category found!" />;
+    content = <div>No Category found!</div>; // Replace with your no category found component
   }
   if (!isLoading && !isError && categories?.result?.length > 0) {
     const category_items = categories.result;
@@ -48,6 +39,7 @@ const ServicesCategoryList = () => {
       </li>
     ));
   }
+
   return <ul>{content}</ul>;
 };
 

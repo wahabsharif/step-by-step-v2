@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Pagination } from "swiper";
@@ -8,16 +8,31 @@ import { ArrowRight } from "@/svg";
 import ServicesItem from "./services-item";
 import ServicesCategoryList from "./services-category-list";
 import ErrorMsg from "@/components/common/error-msg";
-import { useGetProductTypeQuery } from "@/redux/features/productApi";
 import handyman from "@assets/img/home-banner.svg";
 import HomeGadgetPrdLoader from "@/components/loader/home/home-gadget-prd-loader";
+// import local data
+import servicesListData from "@/data/servicesListData";
+import categoriesData from "@/data/categoriesData";
 
 const ServicesListings = () => {
-  const {
-    data: products,
-    isError,
-    isLoading,
-  } = useGetProductTypeQuery({ type: "electronics" });
+  // state to manage selected category
+  const [selectedCategory, setSelectedCategory] = useState(null);
+
+  // simulate the loading state
+  const isLoading = false;
+  const isError = false;
+  const products = { data: servicesListData };
+
+  // filter products based on selected category
+  const filteredProducts = selectedCategory
+    ? products.data.filter((product) =>
+        categoriesData.find(
+          (category) =>
+            category.parent === selectedCategory &&
+            category.products.includes(product._id)
+        )
+      )
+    : products.data;
 
   // decide what to render
   let content = null;
@@ -28,17 +43,31 @@ const ServicesListings = () => {
   if (!isLoading && isError) {
     content = <ErrorMsg msg="There was an error" />;
   }
-  if (!isLoading && !isError && products?.data?.length === 0) {
+  if (!isLoading && !isError && filteredProducts?.length === 0) {
     content = <ErrorMsg msg="No Products found!" />;
   }
-  if (!isLoading && !isError && products?.data?.length > 0) {
-    const product_items = products.data.slice(0, 6);
+  if (!isLoading && !isError && filteredProducts?.length > 0) {
+    const product_items = filteredProducts.slice(0, 6);
     content = product_items.map((prd, i) => (
       <div key={i} className="col-xl-4 col-sm-6">
         <ServicesItem product={prd} />
       </div>
     ));
   }
+
+  // gadget banner data
+  const banner_data = [
+    {
+      bg: handyman,
+      price: 99.99,
+      title: "Gadget One",
+    },
+    {
+      bg: handyman,
+      price: 149.99,
+      title: "Gadget Two",
+    },
+  ];
 
   // gadget banner
   function GadgetBanner() {
@@ -77,6 +106,7 @@ const ServicesListings = () => {
       </Swiper>
     );
   }
+
   return (
     <>
       <section className="tp-product-gadget-area pt-80 pb-75">
@@ -98,7 +128,9 @@ const ServicesListings = () => {
                   </h3>
 
                   <div className="tp-product-gadget-categories-list">
-                    <ServicesCategoryList />
+                    <ServicesCategoryList
+                      onSelectCategory={setSelectedCategory}
+                    />
                   </div>
 
                   <div className="tp-product-gadget-btn">
