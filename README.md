@@ -1,9 +1,4 @@
-# Shofy – Full Stack eCommerce Web Application + Admin Panel
-
-
-![Shofy Image Banner](https://i.ibb.co/KsDDmmg/shofy-banner.png)
-
-Shofy is a powerful and modern full stack eCommerce web application built using Next.js, Express.js, MongoDB with Mongoose, Redux Toolkit, RTK Query, Stripe payment method, Bootstrap 5, and Sass. It includes a feature-rich admin panel for easy management and control of your online store.
+# Step by Step – Full Stack Technical Services Web Application + Admin Panel
 
 ## Features Overview
 
@@ -13,13 +8,13 @@ Shofy is a powerful and modern full stack eCommerce web application built using 
 - **Mongoose:** Mongoose provides a straightforward, schema-based solution to model your application data, offering built-in type casting, validation, and query building.
 - **Stripe:** Stripe offers online payment solutions, allowing you to create a secure and reliable website with e-commerce functionality.
 - **Nodemailer:** Nodemailer is a module for Node.js applications that facilitates easy email sending, keeping your users informed and engaged.
-- **Authentication:** Shofy includes features for Google login, user registration, email verification, forgot password, reset password, and profile updates.
+- **Authentication:** Step By Step includes features for Google login, user registration, email verification, forgot password, reset password, and profile updates.
 - **Redux Toolkit:** Manage state effortlessly with Redux Toolkit, providing a convenient and efficient way to handle state in your application.
 - **RTK Query:** RTK Query is a powerful data fetching and caching tool, ensuring efficient data retrieval for a smoother user experience.
-- **Typescript + Next.js App Directory:** Shofy leverages TypeScript in combination with Next.js, enhancing code reliability and maintainability.
+- **Typescript + Next.js App Directory:** Step By Step leverages TypeScript in combination with Next.js, enhancing code reliability and maintainability.
 - **Form Validation:** Ensure data accuracy and consistency with form validation capabilities.
 - **Bootstrap 5 (latest Version) Framework:** Bootstrap is a popular HTML, CSS, and JS framework for responsive, mobile-first projects.
-- **Responsive Layout Design:** Shofy is fully responsive across all devices, providing a seamless experience for your customers.
+- **Responsive Layout Design:** Step By Step is fully responsive across all devices, providing a seamless experience for your customers.
 - **Touch Friendly:** The web application is designed for easy browsing on touch devices, making it accessible to a wide range of users.
 
 ## Full Features List
@@ -47,14 +42,14 @@ Shofy is a powerful and modern full stack eCommerce web application built using 
 - **Multiple Home Pages:** Choose from a variety of home page designs to best suit your business.
 - **Inner Pages:** Access a range of inner pages for various sections of your eCommerce website.
 - **Image Background:** Customize page backgrounds with visually appealing images.
-- **Flexible and Multi-Purpose:** Shofy is versatile and can be adapted to various eCommerce niches.
+- **Flexible and Multi-Purpose:** Step By Step is versatile and can be adapted to various eCommerce niches.
 - **Valid CSS3:** Comply with modern CSS standards for a better user experience.
 - **24/7 Awesome Support:** Get continuous support for any inquiries or issues you may encounter.
 - **Detailed Documentation:** Access comprehensive documentation for easy development and setup.
 
 ## Powerful Additional Features
 
-- **All E-commerce Features and Apps Included:** Shofy provides a comprehensive eCommerce solution with all the essential features and apps needed for a successful online store.
+- **All E-commerce Features and Apps Included:** Step By Step provides a comprehensive eCommerce solution with all the essential features and apps needed for a successful online store.
 - **Variation Swatch:** Create clean and professional product pages with variation swatches that capture your customer's attention and allow easy selection of product variations.
 - **Filter Variations, Pagination, Filters by Size & Color:** Improve user experience and boost conversion rates by reducing the time needed for customers to complete their orders through filtering options and pagination.
 - **Video Gallery:** Offer customers a detailed view of products with an engaging video gallery that showcases products from different angles or in use.
@@ -67,77 +62,27 @@ Shofy is a powerful and modern full stack eCommerce web application built using 
 
 ## Installation and Usage
 
-To get started with Shofy, follow these steps:
+To get started with Step By Step, follow these steps:
 
-1. Clone the repository:
-
-   ```bash
-   https://github.com/Hamed-Hasan/shofy-ecommerce-client.git
-   ```
-
-2. Install dependencies:
+1. Install dependencies:
 
    ```bash
    npm install
+   yarn install
    ```
 
-3. Configure environment variables.
+2. Configure environment variables.
 
-4. Build the project:
+3. Build the project:
 
    ```bash
    npm run build
+   yarn run build
    ```
 
-5. Start the server:
+4. Start the server:
 
    ```bash
    npm run dev
+   yarn dev
    ```
-
-6. Access the application at the specified URL.
-
-## Client Side Live Link
-
-[Shofy Client Side Live Link](https://shofy-front-end.vercel.app)
-
-## Server Side Live Link
-
-[Shofy Server Side Live Link](https://shofy-backend.vercel.app)
-
-## Client Side Repo
-
-[Shofy Client Side Repo](https://github.com/Hamed-Hasan/shofy-ecommerce-client.git)
-
-## Server Side Repo
-
-[Shofy Server Side Repo](https://github.com/Hamed-Hasan/shofy-ecommerce-backend.git)
-
-## Sources and Credits
-
-- Twitter Bootstrap
-- Swiper Slider
-- Google Fonts
-- Free Font Awesome Icons by Fontawesome
-
-## Thank You for Choosing Shofy!
-
-We hope you find Shofy to be a powerful and effective solution for your eCommerce needs. Should you encounter
-
- any issues or have any questions, please feel free to reach out to our support team at swe.hamedhasan@gmail.com. Happy selling!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 

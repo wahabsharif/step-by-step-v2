@@ -165,7 +165,8 @@
       @include animation-control(0.7s);
       & span {
         display: inline-block;
-        color: var(--tp-yellow-2);
+        color: white;
+        // color: var(--tp-yellow-2);
         position: relative;
         z-index: 1;
         & svg {

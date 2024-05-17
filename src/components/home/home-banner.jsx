@@ -28,7 +28,7 @@ const sliderData = [
       text_6: "Electrician",
     },
     img: slider_img_1,
-    green_bg: true,
+    primary_bg: true,
   },
 ];
 
@@ -77,11 +77,7 @@ const HomeBanenr = () => {
             <SwiperSlide
               key={item.id}
               className={`tp-slider-item tp-slider-height d-flex align-items-center ${
-                item?.green_bg
-                  ? "green-dark-bg"
-                  : item?.is_light
-                  ? "is-light"
-                  : ""
+                item?.primary_bg ? "theme-bg" : item?.is_light ? "is-light" : ""
               }`}
               style={{ backgroundColor: item.is_light && "#E3EDF6" }}
             >

@@ -7,7 +7,6 @@ import FeatureArea from "@/components/home/feature-area";
 // import ProductArea from "@/components/products/electronics/product-area";
 // import BannerArea from "@/components/banner/banner-area";
 // import OfferProducts from "@/components/products/electronics/offer-products";
-// import ProductGadgetArea from "@/components/products/electronics/product-gadget-area";
 // import ProductBanner from "@/components/products/electronics/product-banner";
 // import ProductSmArea from "@/components/products/electronics/product-sm-area";
 // import NewArrivals from "@/components/products/electronics/new-arrivals";
@@ -16,6 +15,7 @@ import FeatureArea from "@/components/home/feature-area";
 // import CtaArea from "@/components/cta/cta-area";
 import Footer from "@/layout/footers/footer";
 import Areas from "@/components/home/areas";
+import ServicesListings from "@/components/services/services-listings";
 
 export default function Home() {
   return (
@@ -26,10 +26,10 @@ export default function Home() {
       <ServicesCategory />
       <FeatureArea />
       <Areas />
+      <ServicesListings />
       {/* <ProductArea/> */}
       {/* <BannerArea/> */}
       {/* <OfferProducts/> */}
-      {/* <ProductGadgetArea/> */}
       {/* <ProductBanner/> */}
       {/* <NewArrivals/> */}
       {/* <ProductSmArea/> */}
