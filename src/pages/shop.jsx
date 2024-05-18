@@ -50,10 +50,14 @@ const ShopPage = ({ query }) => {
   let content = null;
 
   if (isLoading) {
-    content = <ShopLoader loading={isLoading}/>;
+    content = <ShopLoader loading={isLoading} />;
   }
   if (!isLoading && isError) {
-    content = <div className="pb-80 text-center"><ErrorMsg msg="There was an error" /></div>;
+    content = (
+      <div className="pb-80 text-center">
+        <ErrorMsg msg="There was an error" />
+      </div>
+    );
   }
   if (!isLoading && !isError && products?.data?.length === 0) {
     content = <ErrorMsg msg="No Products found!" />;
@@ -92,8 +96,10 @@ const ShopPage = ({ query }) => {
     if (query.status) {
       if (query.status === "on-sale") {
         product_items = product_items.filter((p) => p.discount > 0);
-      } else if (query.status === "in-stock") {
-        product_items = product_items.filter((p) => p.status === "in-stock");
+      } else if (query.status === "service-available") {
+        product_items = product_items.filter(
+          (p) => p.status === "service-available"
+        );
       }
     }
 

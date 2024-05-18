@@ -1,10 +1,10 @@
+import FeatureArea from "@/components/home/feature-area";
+import HomeBanner from "@/components/home/home-banner";
+import ServicesCategory from "@/components/home/services-category";
+import ProductArea from "@/components/products/electronics/product-area";
 import SEO from "@/components/seo";
 import Header from "@/layout/headers/header-2";
 import Wrapper from "@/layout/wrapper";
-import ServicesCategory from "@/components/home/services-category";
-import HomeBanner from "@/components/home/home-banner";
-import FeatureArea from "@/components/home/feature-area";
-// import ProductArea from "@/components/products/electronics/product-area";
 // import BannerArea from "@/components/banner/banner-area";
 // import OfferProducts from "@/components/products/electronics/offer-products";
 // import ProductBanner from "@/components/products/electronics/product-banner";
@@ -13,9 +13,9 @@ import FeatureArea from "@/components/home/feature-area";
 // import BlogArea from "@/components/blog/electronic/blog-area";
 // import InstagramArea from "@/components/instagram/instagram-area";
 // import CtaArea from "@/components/cta/cta-area";
-import Footer from "@/layout/footers/footer";
 import Areas from "@/components/home/areas";
-import ServicesListings from "@/components/services/services-listings";
+import Footer from "@/layout/footers/footer";
+// import ServicesListings from "@/components/services/services-listings";
 
 export default function Home() {
   return (
@@ -26,8 +26,8 @@ export default function Home() {
       <ServicesCategory />
       <FeatureArea />
       <Areas />
-      <ServicesListings />
-      {/* <ProductArea/> */}
+      {/* <ServicesListings /> */}
+      <ProductArea />
       {/* <BannerArea/> */}
       {/* <OfferProducts/> */}
       {/* <ProductBanner/> */}

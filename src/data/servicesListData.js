@@ -50,7 +50,7 @@ const servicesListData = [
       name: "AC Technician",
       id: "6419723bd7dc5155c04350d3",
     },
-    status: "in-stock",
+    status: "service-available",
     reviews: ["6461c46a9154b65448da799f"],
     productType: "electronics",
     description:
@@ -140,7 +140,7 @@ const servicesListData = [
       name: "Handyman",
       id: "6419723bd7dc5155c04350d3",
     },
-    status: "in-stock",
+    status: "service-available",
     reviews: ["6461c46a9154b65448da799f"],
     productType: "electronics",
     description:
@@ -230,7 +230,7 @@ const servicesListData = [
       name: "Handyman",
       id: "6419723bd7dc5155c04350d3",
     },
-    status: "in-stock",
+    status: "service-available",
     reviews: ["6461c46a9154b65448da799f"],
     productType: "electronics",
     description:
@@ -320,7 +320,7 @@ const servicesListData = [
       name: "Handyman",
       id: "6419723bd7dc5155c04350d3",
     },
-    status: "in-stock",
+    status: "service-available",
     reviews: ["6461c46a9154b65448da799f"],
     productType: "electronics",
     description:
@@ -410,7 +410,7 @@ const servicesListData = [
       name: "Handyman",
       id: "6419723bd7dc5155c04350d3",
     },
-    status: "in-stock",
+    status: "service-available",
     reviews: ["6461c46a9154b65448da799f"],
     productType: "electronics",
     description:
@@ -500,7 +500,7 @@ const servicesListData = [
       name: "Handyman",
       id: "6419723bd7dc5155c04350d3",
     },
-    status: "in-stock",
+    status: "service-available",
     reviews: ["6461c46a9154b65448da799f"],
     productType: "electronics",
     description:
@@ -590,7 +590,7 @@ const servicesListData = [
       name: "Handyman",
       id: "6419723bd7dc5155c04350d3",
     },
-    status: "in-stock",
+    status: "service-available",
     reviews: ["6461c46a9154b65448da799f"],
     productType: "electronics",
     description:
