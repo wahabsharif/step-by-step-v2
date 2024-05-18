@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useGetProductTypeQuery } from "@/redux/features/productApi";
-import { ShapeLine, TabLine } from "@/svg";
 import ProductItem from "./product-item";
 import ErrorMsg from "@/components/common/error-msg";
 import HomePrdLoader from "@/components/loader/home/home-prd-loader";
 
-const tabs = ["new", "featured", "topSellers"];
+const tabs = ["All", "featured", "topSellers"];
 
 const ProductArea = () => {
   const [activeTab, setActiveTab] = useState("new");
@@ -53,12 +52,11 @@ const ProductArea = () => {
         <div className="row align-items-end">
           <div className="col-xl-5 col-lg-6 col-md-5">
             <div className="tp-section-title-wrapper mb-40">
-              <h3 className="tp-section-title">
-                Top Services
-                <ShapeLine />
-              </h3>
+              <h3 className="tp-section-title">Top Services</h3>
             </div>
           </div>
+
+          {/* Filter */}
           <div className="col-xl-7 col-lg-6 col-md-7">
             <div className="tp-product-tab tp-product-tab-border mb-45 tp-tab d-flex justify-content-md-end">
               <ul className="nav nav-tabs justify-content-sm-end">
@@ -71,9 +69,6 @@ const ProductArea = () => {
                       }`}
                     >
                       {tab.split("-").join(" ")}
-                      <span className="tp-product-tab-line">
-                        <TabLine />
-                      </span>
                     </button>
                   </li>
                 ))}
