@@ -16,7 +16,7 @@ const BeautyCategory = () => {
   // handle category route
   const handleCategoryRoute = (title) => {
     router.push(
-      `/shop?category=${title
+      `/services?category=${title
         .toLowerCase()
         .replace("&", "")
         .split(" ")
@@ -27,7 +27,7 @@ const BeautyCategory = () => {
   let content = null;
 
   if (isLoading) {
-    content = <HomeThreeCategoryLoader loading={isLoading}/>;
+    content = <HomeThreeCategoryLoader loading={isLoading} />;
   }
   if (!isLoading && isError) {
     content = <ErrorMsg msg="There was an error" />;
@@ -85,7 +85,7 @@ const BeautyCategory = () => {
             </div>
             <div className="col-lg-6 col-md-4">
               <div className="tp-category-more-3 text-md-end mb-55">
-                <Link href="/shop" className="tp-btn">
+                <Link href="/services" className="tp-btn">
                   Shop All Products <ArrowRightSmTwo />
                 </Link>
               </div>

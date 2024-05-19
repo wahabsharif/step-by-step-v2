@@ -4,10 +4,10 @@ import { useDispatch } from "react-redux";
 // internal
 import ErrorMsg from "@/components/common/error-msg";
 import { useGetShowCategoryQuery } from "@/redux/features/categoryApi";
-import { handleFilterSidebarClose } from "@/redux/features/shop-filter-slice";
-import ShopCategoryLoader from "@/components/loader/shop/shop-category-loader";
+import { handleFilterSidebarClose } from "@/redux/features/services-filter-slice";
+import ShopCategoryLoader from "@/components/loader/services/services-category-loader";
 
-const CategoryFilter = ({setCurrPage,shop_right=false}) => {
+const CategoryFilter = ({ setCurrPage, shop_right = false }) => {
   const { data: categories, isLoading, isError } = useGetShowCategoryQuery();
   const router = useRouter();
   const dispatch = useDispatch();
@@ -16,19 +16,19 @@ const CategoryFilter = ({setCurrPage,shop_right=false}) => {
   const handleCategoryRoute = (title) => {
     setCurrPage(1);
     router.push(
-      `/${shop_right?'shop-right-sidebar':'shop'}?category=${title
+      `/${shop_right ? "shop-right-sidebar" : "shop"}?category=${title
         .toLowerCase()
         .replace("&", "")
         .split(" ")
         .join("-")}`
-        )
+    );
     dispatch(handleFilterSidebarClose());
-  }
+  };
   // decide what to render
   let content = null;
 
   if (isLoading) {
-    content = <ShopCategoryLoader loading={isLoading}/>;
+    content = <ShopCategoryLoader loading={isLoading} />;
   }
   if (!isLoading && isError) {
     content = <ErrorMsg msg="There was an error" />;

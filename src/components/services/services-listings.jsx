@@ -97,7 +97,7 @@ const ServicesListings = () => {
                 Only ${b.price.toFixed(2)}
               </span>
               <h3 className="tp-product-gadget-banner-title">
-                <Link href="/shop">{b.title}</Link>
+                <Link href="/services">{b.title}</Link>
               </h3>
             </div>
           </SwiperSlide>

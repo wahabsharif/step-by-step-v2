@@ -2,7 +2,7 @@ import React from "react";
 import ErrorMsg from "../common/error-msg";
 import { useGetShowCategoryQuery } from "@/redux/features/categoryApi";
 import { useRouter } from "next/router";
-import ShopCategoryLoader from "../loader/shop/shop-category-loader";
+import ShopCategoryLoader from "../loader/services/services-category-loader";
 
 const ShopCategoryArea = () => {
   const { data: categories, isLoading, isError } = useGetShowCategoryQuery();
@@ -10,7 +10,7 @@ const ShopCategoryArea = () => {
   // handle category route
   const handleCategoryRoute = (title) => {
     router.push(
-      `/shop?category=${title
+      `/services?category=${title
         .toLowerCase()
         .replace("&", "")
         .split(" ")

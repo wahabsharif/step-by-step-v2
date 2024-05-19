@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 import Pagination from "@/ui/Pagination";
 import ProductItem from "../products/fashion/product-item";
-import CategoryFilter from "./shop-filter/category-filter";
-import ColorFilter from "./shop-filter/color-filter";
-import PriceFilter from "./shop-filter/price-filter";
-import ProductBrand from "./shop-filter/product-brand";
-import StatusFilter from "./shop-filter/status-filter";
-import TopRatedProducts from "./shop-filter/top-rated-products";
-import ShopListItem from "./shop-list-item";
-import ShopTopLeft from "./shop-top-left";
-import ShopTopRight from "./shop-top-right";
-import ResetButton from "./shop-filter/reset-button";
+import CategoryFilter from "./services-filter/category-filter";
+import ColorFilter from "./services-filter/color-filter";
+import PriceFilter from "./services-filter/price-filter";
+import ProductBrand from "./services-filter/product-brand";
+import StatusFilter from "./services-filter/status-filter";
+import TopRatedProducts from "./services-filter/top-rated-products";
+import ShopListItem from "./services-list-item";
+import ShopTopLeft from "./services-top-left";
+import ShopTopRight from "./services-top-right";
+import ResetButton from "./services-filter/reset-button";
 
 const ShopArea = ({ all_products, products, otherProps }) => {
-  const {priceFilterValues,selectHandleFilter,currPage,setCurrPage} = otherProps;
+  const { priceFilterValues, selectHandleFilter, currPage, setCurrPage } =
+    otherProps;
   const [filteredRows, setFilteredRows] = useState(products);
   const [pageStart, setPageStart] = useState(0);
   const [countOfPage, setCountOfPage] = useState(12);
@@ -51,7 +52,7 @@ const ShopArea = ({ all_products, products, otherProps }) => {
                 {/* brand */}
                 <ProductBrand setCurrPage={setCurrPage} />
                 {/* reset filter */}
-                <ResetButton/>
+                <ResetButton />
               </div>
             </div>
             <div className="col-xl-9 col-lg-8">

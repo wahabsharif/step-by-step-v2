@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import SEO from "@/components/seo";
 import Wrapper from "@/layout/wrapper";
 import HeaderTwo from "@/layout/headers/header-2";
-import ShopBreadcrumb from "@/components/breadcrumb/shop-breadcrumb";
-import ShopArea from "@/components/shop/shop-area";
+import ShopBreadcrumb from "@/components/breadcrumb/services-breadcrumb";
+import ShopArea from "@/components/services/services-area";
 import { useGetAllProductsQuery } from "@/redux/features/productApi";
 import ErrorMsg from "@/components/common/error-msg";
 import Footer from "@/layout/footers/footer";
-import ShopFilterOffCanvas from "@/components/common/shop-filter-offcanvas";
-import ShopLoader from "@/components/loader/shop/shop-loader";
+import ShopFilterOffCanvas from "@/components/common/services-filter-offcanvas";
+import ShopLoader from "@/components/loader/services/services-loader";
 
 const ShopPage = ({ query }) => {
   const { data: products, isError, isLoading } = useGetAllProductsQuery();

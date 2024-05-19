@@ -3,7 +3,7 @@ import ErrorMsg from "@/components/common/error-msg";
 import SearchPrdLoader from "@/components/loader/search-prd-loader";
 import ProductItem from "@/components/products/fashion/product-item";
 import SEO from "@/components/seo";
-import ShopTopLeft from "@/components/shop/shop-top-left";
+import ShopTopLeft from "@/components/services/services-top-left";
 import Footer from "@/layout/footers/footer";
 import HeaderTwo from "@/layout/headers/header-2";
 import Wrapper from "@/layout/wrapper";

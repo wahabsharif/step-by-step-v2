@@ -1,6 +1,6 @@
 // import { useEffect, useState } from "react";
 // import { useDispatch } from "react-redux";
-// import { add_force_page } from "@/redux/features/shop-filter-slice";
+// import { add_force_page } from "@/redux/features/services-filter-slice";
 
 // const usePagination = (items,itemsPerPage) => {
 //   const {forcePage} = useSelector(state => state.shopFilter)
@@ -14,7 +14,6 @@
 //     setCurrentItems(items?.slice(itemOffset, endOffset));
 //     setPageCount(Math.ceil(items.length / itemsPerPage));
 //   }, [itemOffset, itemsPerPage, items]);
-
 
 //   const handlePageClick = (event) => {
 //     const newOffset = (event.selected * itemsPerPage) % items.length;

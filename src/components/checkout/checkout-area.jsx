@@ -10,7 +10,15 @@ import useCheckoutSubmit from "@/hooks/use-checkout-submit";
 
 const CheckoutArea = () => {
   const checkoutData = useCheckoutSubmit();
-  const {handleSubmit,submitHandler,register,errors,handleCouponCode,couponRef,couponApplyMsg} = checkoutData;
+  const {
+    handleSubmit,
+    submitHandler,
+    register,
+    errors,
+    handleCouponCode,
+    couponRef,
+    couponApplyMsg,
+  } = checkoutData;
   const { cart_products } = useSelector((state) => state.cart);
   return (
     <>
@@ -22,7 +30,7 @@ const CheckoutArea = () => {
           {cart_products.length === 0 && (
             <div className="text-center pt-50">
               <h3 className="py-2">No items found in cart to checkout</h3>
-              <Link href="/shop" className="tp-checkout-btn">
+              <Link href="/services" className="tp-checkout-btn">
                 Return to shop
               </Link>
             </div>

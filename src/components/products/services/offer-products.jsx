@@ -37,9 +37,13 @@ const sliderSetting = {
 };
 
 const OfferProducts = () => {
-  const {data: products,isError,isLoading} = useGetOfferProductsQuery("electronics");
+  const {
+    data: products,
+    isError,
+    isLoading,
+  } = useGetOfferProductsQuery("services");
   // decide what to render
-  console.log(products)
+  console.log(products);
   let content = null;
   if (isLoading) {
     content = <HomeOfferPrdLoader loading={isLoading} />;
@@ -85,7 +89,10 @@ const OfferProducts = () => {
             <div className="col-xl-8 col-md-7 col-sm-6">
               <div className="tp-product-offer-more-wrapper d-flex justify-content-sm-end p-relative z-index-1">
                 <div className="tp-product-offer-more mb-40 text-sm-end grey-bg-2">
-                  <Link href="/shop" className="tp-btn tp-btn-2 tp-btn-blue">
+                  <Link
+                    href="/services"
+                    className="tp-btn tp-btn-2 tp-btn-blue"
+                  >
                     View All Deals
                     <ArrowRightLong />
                   </Link>

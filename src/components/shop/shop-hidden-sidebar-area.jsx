@@ -1,16 +1,12 @@
 import React, { useState } from "react";
 import Pagination from "@/ui/Pagination";
 import ProductItem from "../products/fashion/product-item";
-import ShopListItem from "./shop-list-item";
-import ShopTopLeft from "./shop-top-left";
-import ShopTopRight from "./shop-top-right";
+import ShopListItem from "./services-list-item";
+import ShopTopLeft from "./services-top-left";
+import ShopTopRight from "./services-top-right";
 
-const ShopHiddenSidebarArea = ({
-  all_products,
-  products,
-  otherProps,
-}) => {
-  const { currPage, setCurrPage,selectHandleFilter } = otherProps;
+const ShopHiddenSidebarArea = ({ all_products, products, otherProps }) => {
+  const { currPage, setCurrPage, selectHandleFilter } = otherProps;
   const [filteredRows, setFilteredRows] = useState(products);
   const [pageStart, setPageStart] = useState(0);
   const [countOfPage, setCountOfPage] = useState(12);
@@ -27,7 +23,7 @@ const ShopHiddenSidebarArea = ({
         <div className="container">
           <div className="row">
             <div className="col-xl-12 col-lg-12">
-            <div className="tp-shop-main-wrapper">
+              <div className="tp-shop-main-wrapper">
                 <div className="tp-shop-top mb-45">
                   <div className="row">
                     <div className="col-xl-6">

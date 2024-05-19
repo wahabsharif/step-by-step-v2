@@ -5,7 +5,6 @@ import { ArrowRight } from "@/svg";
 import banner_1 from "@assets/img/product/banner/product-banner-1.jpg";
 import banner_2 from "@assets/img/product/banner/product-banner-2.jpg";
 
-
 // banner item
 function BannerItem({ sm = false, bg, title }) {
   return (
@@ -21,11 +20,11 @@ function BannerItem({ sm = false, bg, title }) {
       <div className="tp-banner-content">
         {!sm && <span>Sale 20% off all store</span>}
         <h3 className="tp-banner-title">
-          <Link href="/shop">{title}</Link>
+          <Link href="/services">{title}</Link>
         </h3>
         {sm && <p>Sale 35% off</p>}
         <div className="tp-banner-btn">
-          <Link href="/shop" className="tp-link-btn">
+          <Link href="/services" className="tp-link-btn">
             Shop Now
             <ArrowRight />
           </Link>

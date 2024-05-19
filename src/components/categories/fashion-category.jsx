@@ -12,12 +12,12 @@ const FashionCategory = () => {
     isLoading,
     isError,
   } = useGetProductTypeCategoryQuery("fashion");
-  const router = useRouter()
+  const router = useRouter();
 
   // handle category route
   const handleCategoryRoute = (title) => {
     router.push(
-      `/shop?category=${title
+      `/services?category=${title
         .toLowerCase()
         .replace("&", "")
         .split(" ")

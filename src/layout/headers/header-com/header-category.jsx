@@ -6,7 +6,7 @@ import { useGetProductTypeCategoryQuery } from "@/redux/features/categoryApi";
 import ErrorMsg from "@/components/common/error-msg";
 import Loader from "@/components/loader/loader";
 
-const HeaderCategory = ({ isCategoryActive, categoryType = "electronics" }) => {
+const HeaderCategory = ({ isCategoryActive, categoryType = "services" }) => {
   const {
     data: categories,
     isError,
@@ -18,7 +18,7 @@ const HeaderCategory = ({ isCategoryActive, categoryType = "electronics" }) => {
   const handleCategoryRoute = (title, route) => {
     if (route === "parent") {
       router.push(
-        `/shop?category=${title
+        `/services?category=${title
           .toLowerCase()
           .replace("&", "")
           .split(" ")
@@ -26,7 +26,7 @@ const HeaderCategory = ({ isCategoryActive, categoryType = "electronics" }) => {
       );
     } else {
       router.push(
-        `/shop?subCategory=${title
+        `/services?subCategory=${title
           .toLowerCase()
           .replace("&", "")
           .split(" ")
