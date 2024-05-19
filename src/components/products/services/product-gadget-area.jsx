@@ -1,7 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade, Pagination } from "swiper";
 import Link from "next/link";
 // internal
 import { ArrowRight } from "@/svg";

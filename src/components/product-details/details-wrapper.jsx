@@ -19,7 +19,6 @@ const DetailsWrapper = ({ productItem, detailsBottom = false }) => {
     price,
     status,
     reviews,
-    tags,
     offerDate,
   } = productItem || {};
   const [ratingVal, setRatingVal] = useState(0);
@@ -130,7 +129,7 @@ const DetailsWrapper = ({ productItem, detailsBottom = false }) => {
         </Link>
       </div>
       {detailsBottom && (
-        <DetailsBottomInfo category={category?.name} sku={sku} tag={tags[0]} />
+        <DetailsBottomInfo category={category?.name} sku={sku} />
       )}
     </div>
   );
