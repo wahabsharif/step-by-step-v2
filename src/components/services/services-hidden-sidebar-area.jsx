@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Pagination from "@/ui/Pagination";
-import ProductItem from "../products/fashion/product-item";
+import ProductItem from "../products/services/product-item";
 import ShopListItem from "./services-list-item";
 import ShopTopLeft from "./services-top-left";
 import ShopTopRight from "./services-top-right";

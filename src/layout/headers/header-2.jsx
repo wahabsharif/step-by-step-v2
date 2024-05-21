@@ -144,7 +144,7 @@ const HeaderTwo = ({ style_2 = false }) => {
       <OffCanvas
         isOffCanvasOpen={isOffCanvasOpen}
         setIsCanvasOpen={setIsCanvasOpen}
-        categoryType="fashion"
+        categoryType="services"
       />
       {/* off canvas end */}
     </>
