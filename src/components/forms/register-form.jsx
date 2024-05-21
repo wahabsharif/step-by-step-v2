@@ -25,7 +25,12 @@ const RegisterForm = () => {
   const router = useRouter();
   const { redirect } = router.query;
   // react hook form
-  const {register,handleSubmit,formState: { errors },reset} = useForm({
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm({
     resolver: yupResolver(schema),
   });
   // on submit
@@ -69,7 +74,7 @@ const RegisterForm = () => {
               id="email"
               name="email"
               type="email"
-              placeholder="shofy@mail.com"
+              placeholder="stepbystepllc@mail.com"
             />
           </div>
           <div className="tp-login-input-title">
@@ -85,7 +90,7 @@ const RegisterForm = () => {
                 id="password"
                 name="password"
                 type={showPass ? "text" : "password"}
-                placeholder="Min. 6 character"
+                placeholder="Min. 8 character"
               />
             </div>
             <div className="tp-login-input-eye" id="password-show-toggle">
