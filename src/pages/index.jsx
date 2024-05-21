@@ -17,6 +17,7 @@ import Areas from "@/components/home/areas";
 import Footer from "@/layout/footers/footer";
 // import ProductBanner from "@/components/products/services/product-banner";
 import ProductGadgetArea from "@/components/products/services/product-gadget-area";
+import ServicesCategories from "@/components/categories/services-categories";
 // import ServicesListings from "@/components/services/services-listings";
 
 export default function Home() {
@@ -25,7 +26,8 @@ export default function Home() {
       <SEO pageTitle="Home" />
       <Header />
       <HomeBanner />
-      <ServicesCategory />
+      <ServicesCategories />
+      {/* <ServicesCategory /> */}
       <FeatureArea />
       <Areas />
       <ProductArea />
