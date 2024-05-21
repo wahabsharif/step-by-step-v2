@@ -16,7 +16,7 @@ const CategoryFilter = ({ setCurrPage, shop_right = false }) => {
   const handleCategoryRoute = (title) => {
     setCurrPage(1);
     router.push(
-      `/${shop_right ? "shop-right-sidebar" : "shop"}?category=${title
+      `/${shop_right ? "shop-right-sidebar" : "services"}?category=${title
         .toLowerCase()
         .replace("&", "")
         .split(" ")

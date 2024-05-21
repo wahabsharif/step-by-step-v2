@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import Pagination from "@/ui/Pagination";
-import ProductItem from "../products/fashion/product-item";
+import ProductItem from "../products/services/product-item";
 import CategoryFilter from "./services-filter/category-filter";
-import ColorFilter from "./services-filter/color-filter";
 import PriceFilter from "./services-filter/price-filter";
 import ProductBrand from "./services-filter/product-brand";
 import StatusFilter from "./services-filter/status-filter";
@@ -45,8 +44,6 @@ const ShopArea = ({ all_products, products, otherProps }) => {
                 <StatusFilter setCurrPage={setCurrPage} />
                 {/* categories */}
                 <CategoryFilter setCurrPage={setCurrPage} />
-                {/* color */}
-                <ColorFilter setCurrPage={setCurrPage} />
                 {/* product rating */}
                 <TopRatedProducts />
                 {/* brand */}

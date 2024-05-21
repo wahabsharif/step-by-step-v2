@@ -8,7 +8,7 @@ const ResetButton = ({ shop_right = false }) => {
       <h3 className="tp-shop-widget-title">Reset Filter</h3>
       <button
         onClick={() =>
-          router.push(`/${shop_right ? "shop-right-sidebar" : "shop"}`)
+          router.push(`/${shop_right ? "shop-right-sidebar" : "services"}`)
         }
         className="tp-btn"
       >

@@ -1,7 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import CategoryFilter from "../services/services-filter/category-filter";
-import ColorFilter from "../services/services-filter/color-filter";
 import PriceFilter from "../services/services-filter/price-filter";
 import ProductBrand from "../services/services-filter/product-brand";
 import StatusFilter from "../services/services-filter/status-filter";
@@ -53,8 +52,6 @@ const ShopFilterOffCanvas = ({
             <StatusFilter setCurrPage={setCurrPage} shop_right={right_side} />
             {/* categories */}
             <CategoryFilter setCurrPage={setCurrPage} shop_right={right_side} />
-            {/* color */}
-            <ColorFilter setCurrPage={setCurrPage} shop_right={right_side} />
             {/* product rating */}
             <TopRatedProducts />
             {/* brand */}

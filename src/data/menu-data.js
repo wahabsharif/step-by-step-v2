@@ -13,22 +13,28 @@ const menu_data = [
   },
   {
     id: 5,
-    sub_menu: true,
+    single_link: true,
     title: "Services",
     link: "/services",
-    sub_menus: [
-      {
-        title: "AC Repair and Maintenance",
-        link: "/ac-repair-and-maintenance",
-      },
-      { title: "Handyman", link: "/handyman" },
-      { title: "Carpenter", link: "/carpenter" },
-      { title: "Plumber", link: "/plumber" },
-      { title: "Electrician", link: "/electrician" },
-      { title: "Home Appliances", link: "/home-appliances" },
-      { title: "Painter", link: "/painter" },
-    ],
   },
+  // {
+  //   id: 5,
+  //   sub_menu: true,
+  //   title: "Services",
+  //   link: "/services",
+  //   sub_menus: [
+  //     {
+  //       title: "AC Repair and Maintenance",
+  //       link: "/ac-repair-and-maintenance",
+  //     },
+  //     { title: "Handyman", link: "/handyman" },
+  //     { title: "Carpenter", link: "/carpenter" },
+  //     { title: "Plumber", link: "/plumber" },
+  //     { title: "Electrician", link: "/electrician" },
+  //     { title: "Home Appliances", link: "/home-appliances" },
+  //     { title: "Painter", link: "/painter" },
+  //   ],
+  // },
   {
     id: 6,
     single_link: true,
@@ -55,22 +61,28 @@ export const mobile_menu = [
   },
   {
     id: 5,
-    sub_menu: true,
+    single_link: true,
     title: "Services",
     link: "/services",
-    sub_menus: [
-      {
-        title: "AC Repair and Maintenance",
-        link: "/ac-repair-and-maintenance",
-      },
-      { title: "Handyman", link: "/handyman" },
-      { title: "Carpenter", link: "/carpenter" },
-      { title: "Plumber", link: "/plumber" },
-      { title: "Electrician", link: "/electrician" },
-      { title: "Home Appliances", link: "/home-appliances" },
-      { title: "Painter", link: "/painter" },
-    ],
   },
+  // {
+  //   id: 5,
+  //   sub_menu: true,
+  //   title: "Services",
+  //   link: "/services",
+  //   sub_menus: [
+  //     {
+  //       title: "AC Repair and Maintenance",
+  //       link: "/ac-repair-and-maintenance",
+  //     },
+  //     { title: "Handyman", link: "/handyman" },
+  //     { title: "Carpenter", link: "/carpenter" },
+  //     { title: "Plumber", link: "/plumber" },
+  //     { title: "Electrician", link: "/electrician" },
+  //     { title: "Home Appliances", link: "/home-appliances" },
+  //     { title: "Painter", link: "/painter" },
+  //   ],
+  // },
   {
     id: 6,
     single_link: true,
