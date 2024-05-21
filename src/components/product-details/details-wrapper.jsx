@@ -124,7 +124,7 @@ const DetailsWrapper = ({ productItem, detailsBottom = false }) => {
         </div>
         <Link href="/cart" onClick={() => dispatch(handleModalClose())}>
           <button className="tp-product-details-buy-now-btn w-100">
-            Buy Now
+            Book Now
           </button>
         </Link>
       </div>

@@ -1,19 +1,18 @@
-import React from 'react';
-import SEO from '@/components/seo';
-import HeaderTwo from '@/layout/headers/header-2';
-import Footer from '@/layout/footers/footer';
-import Wrapper from '@/layout/wrapper';
-import CartArea from '@/components/cart-wishlist/cart-area';
-import CommonBreadcrumb from '@/components/breadcrumb/common-breadcrumb';
+import CommonBreadcrumb from "@/components/breadcrumb/common-breadcrumb";
+import CartArea from "@/components/cart-wishlist/cart-area";
+import SEO from "@/components/seo";
+import Footer from "@/layout/footers/footer";
+import HeaderTwo from "@/layout/headers/header-2";
+import Wrapper from "@/layout/wrapper";
 
 const CartPage = () => {
   return (
     <Wrapper>
       <SEO pageTitle="Cart" />
-      <HeaderTwo style_2={true} />
+      <HeaderTwo />
       <CommonBreadcrumb title="Shopping Cart" subtitle="Shopping Cart" />
-      <CartArea/>
-      <Footer primary_style={true} />
+      <CartArea />
+      <Footer />
     </Wrapper>
   );
 };

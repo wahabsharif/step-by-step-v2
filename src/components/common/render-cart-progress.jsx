@@ -9,9 +9,9 @@ const RenderCartProgress = () => {
     const remainingAmount = freeShippingThreshold - total;
     return (
       <>
-        <p>{`Add $${remainingAmount.toFixed(
+        <p>{`Add AED ${remainingAmount.toFixed(
           2
-        )} more to qualify for free shipping`}</p>
+        )} more to qualify for free Gift Pack`}</p>
         <div className="progress">
           <div
             className="progress-bar progress-bar-striped progress-bar-animated"
