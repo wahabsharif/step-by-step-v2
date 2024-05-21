@@ -80,10 +80,7 @@ const NewArrivals = () => {
           <div className="row align-items-end">
             <div className="col-xl-5 col-sm-6">
               <div className="tp-section-title-wrapper mb-40">
-                <h3 className="tp-section-title">
-                  New Arrivals
-                  <ShapeLine />
-                </h3>
+                <h3 className="tp-section-title">Most Demanded Services</h3>
               </div>
             </div>
             <div className="col-xl-7 col-sm-6">
