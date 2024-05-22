@@ -34,17 +34,18 @@ const CheckoutOrderArea = ({ checkoutData }) => {
           </li>
 
           {/*  item list */}
+          {/* item list */}
           {cart_products.map((item) => (
             <li key={item._id} className="tp-order-info-list-desc">
               <p>
                 {item.title} <span> x {item.orderQuantity}</span>
               </p>
-              <span>${item.price.toFixed(2)}</span>
+              <span>AED {(item.price * 0.8).toFixed(2)}</span>
             </li>
           ))}
 
           {/*  shipping */}
-          <li className="tp-order-info-list-shipping">
+          {/* <li className="tp-order-info-list-shipping">
             <span>Shipping</span>
             <div className="tp-order-info-list-shipping-item d-flex flex-column align-items-end">
               <span>
@@ -82,7 +83,7 @@ const CheckoutOrderArea = ({ checkoutData }) => {
                 <ErrorMsg msg={errors?.shippingOption?.message} />
               </span>
             </div>
-          </li>
+          </li> */}
 
           {/*  subtotal */}
           <li className="tp-order-info-list-subtotal">
@@ -91,21 +92,21 @@ const CheckoutOrderArea = ({ checkoutData }) => {
           </li>
 
           {/*  shipping cost */}
-          <li className="tp-order-info-list-subtotal">
+          {/* <li className="tp-order-info-list-subtotal">
             <span>Shipping Cost</span>
             <span>${shippingCost.toFixed(2)}</span>
-          </li>
+          </li> */}
 
           {/* discount */}
           <li className="tp-order-info-list-subtotal">
             <span>Discount</span>
-            <span>${discountAmount.toFixed(2)}</span>
+            <span>AED {discountAmount.toFixed(2)}</span>
           </li>
 
           {/* total */}
           <li className="tp-order-info-list-total">
             <span>Total</span>
-            <span>${parseFloat(cartTotal).toFixed(2)}</span>
+            <span>AED {parseFloat(cartTotal).toFixed(2)}</span>
           </li>
         </ul>
       </div>
