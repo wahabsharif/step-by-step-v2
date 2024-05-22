@@ -165,7 +165,7 @@ const Footer = ({
                   <div className="tp-footer-copyright">
                     <p>
                       © {new Date().getFullYear()} Step By Step - All Rights
-                      Reserved. | Designed and Developed With ❤ by {""}
+                      Reserved. | Designed and Developed With ❤️ by {""}
                       <Link href="http://beacontechh.com/">Beacon Techh </Link>.
                     </p>
                   </div>
