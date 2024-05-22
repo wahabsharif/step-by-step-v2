@@ -191,8 +191,13 @@
   }
   &-btn {
     & .tp-btn {
+      background-color: #f8b342;
+      color: #fff;
+      font-size: large;
+      font-weight: bold;
       border: 1px solid var(--tp-common-white);
       @include animation-control(0.9s);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
       &:hover {
         background-color: transparent;
