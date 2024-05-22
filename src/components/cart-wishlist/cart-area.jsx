@@ -50,17 +50,20 @@ const CartArea = () => {
                 <div className="tp-cart-bottom">
                   <div className="row align-items-end">
                     <div className="col-xl-6 col-md-8">
-                      {/* <div className="tp-cart-coupon">
+                      <div className="tp-cart-coupon">
                         <form action="#">
                           <div className="tp-cart-coupon-input-box">
                             <label>Coupon Code:</label>
                             <div className="tp-cart-coupon-input d-flex align-items-center">
-                              <input type="text" placeholder="Enter Coupon Code" />
+                              <input
+                                type="text"
+                                placeholder="Enter Coupon Code"
+                              />
                               <button type="submit">Apply</button>
                             </div>
                           </div>
                         </form>
-                      </div> */}
+                      </div>
                     </div>
                     <div className="col-xl-6 col-md-4">
                       <div className="tp-cart-update text-md-end mr-30">

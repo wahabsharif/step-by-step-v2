@@ -63,7 +63,7 @@ const ServicesCategories = () => {
                 {item.parent}
               </a>
             </h3>
-            <p>{item.products.length} Product</p>
+            <p>{item.products.length} Services</p>
           </div>
         </div>
       </div>

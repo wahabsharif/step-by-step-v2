@@ -5,22 +5,22 @@ import { useState } from "react";
 
 const CartCheckout = () => {
   const { total } = useCartInfo();
-  const [shipCost, setShipCost] = useState(0);
+  // const [shipCost, setShipCost] = useState(0);
   // handle shipping cost
-  const handleShippingCost = (value) => {
-    if (value === "free") {
-      setShipCost(0);
-    } else {
-      setShipCost(value);
-    }
-  };
+  // const handleShippingCost = (value) => {
+  //   if (value === "free") {
+  //     setShipCost(0);
+  //   } else {
+  //     setShipCost(value);
+  //   }
+  // };
   return (
     <div className="tp-cart-checkout-wrapper">
       <div className="tp-cart-checkout-top d-flex align-items-center justify-content-between">
         <span className="tp-cart-checkout-top-title">Subtotal</span>
         <span className="tp-cart-checkout-top-price">AED {total}</span>
       </div>
-      <div className="tp-cart-checkout-shipping">
+      {/* <div className="tp-cart-checkout-shipping">
         <h4 className="tp-cart-checkout-shipping-title">Shipping</h4>
         <div className="tp-cart-checkout-shipping-option-wrapper">
           <div className="tp-cart-checkout-shipping-option">
@@ -48,10 +48,10 @@ const CartCheckout = () => {
             </label>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="tp-cart-checkout-total d-flex align-items-center justify-content-between">
         <span>Total</span>
-        <span>AED {(total + shipCost).toFixed(2)}</span>
+        <span>AED {total.toFixed(2)}</span>
       </div>
       <div className="tp-cart-checkout-proceed">
         <Link href="/checkout" className="tp-cart-checkout-btn w-100">

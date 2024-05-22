@@ -1,8 +1,9 @@
+// Import React and other necessary modules
 import React from "react";
 import Image from "next/image";
 import { useDispatch } from "react-redux";
 import Link from "next/link";
-// internal
+// internal imports
 import { Close, Minus, Plus } from "@/svg";
 import {
   add_cart_product,
@@ -10,7 +11,7 @@ import {
   remove_product,
 } from "@/redux/features/cartSlice";
 
-const CartItem = ({ product }) => {
+const CartItem = ({ product, discountPercentage = 20 }) => {
   const { _id, img, title, price, orderQuantity = 0 } = product || {};
 
   const dispatch = useDispatch();
@@ -19,6 +20,7 @@ const CartItem = ({ product }) => {
   const handleAddProduct = (prd) => {
     dispatch(add_cart_product(prd));
   };
+
   // handle decrement product
   const handleDecrement = (prd) => {
     dispatch(quantityDecrement(prd));
@@ -28,6 +30,11 @@ const CartItem = ({ product }) => {
   const handleRemovePrd = (prd) => {
     dispatch(remove_product(prd));
   };
+
+  // Calculate discounted price
+  const discountedPrice = (price - price * (discountPercentage / 100)).toFixed(
+    2
+  );
 
   return (
     <tr>
@@ -43,7 +50,7 @@ const CartItem = ({ product }) => {
       </td>
       {/* price */}
       <td className="tp-cart-price">
-        <span>AED {(price * orderQuantity).toFixed(2)}</span>
+        <span>AED {discountedPrice}</span>
       </td>
       {/* quantity */}
       <td className="tp-cart-quantity">

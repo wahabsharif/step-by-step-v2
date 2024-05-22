@@ -28,7 +28,7 @@ const RenderCartProgress = () => {
   }
   return (
     <>
-      <p> You are eligible for free shipping</p>
+      <p> You are eligible for Gift Pack 😍</p>
       <div className="progress">
         <div
           className="progress-bar progress-bar-striped progress-bar-animated"
