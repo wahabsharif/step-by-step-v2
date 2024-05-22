@@ -3,16 +3,16 @@ import Image from "next/image";
 import Link from "next/link";
 // internal
 import SEO from "@/components/seo";
-import HeaderTwo from "@/layout/headers/header-2";
+import Header from "@/layout/headers/header";
 import Footer from "@/layout/footers/footer";
 import Wrapper from "@/layout/wrapper";
-import error from '@assets/img/error/error.png';
+import error from "@assets/img/error/error.png";
 
 const ErrorPage = () => {
   return (
     <Wrapper>
       <SEO pageTitle="404" />
-      <HeaderTwo style_2={true} />
+      <Header />
       {/* 404 area start */}
       <section className="tp-error-area pt-110 pb-110">
         <div className="container">
@@ -38,7 +38,7 @@ const ErrorPage = () => {
         </div>
       </section>
       {/* 404 area end */}
-      <Footer primary_style={true} />
+      <Footer />
     </Wrapper>
   );
 };

@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 // internal
 import Menus from "./header-com/menus";
 import useSticky from "@/hooks/use-sticky";
-import logo from "@assets/img/logo/logo.svg";
+import logo from "@assets/img/logo/step-by-step-landscape-logo.svg";
 import useCartInfo from "@/hooks/use-cart-info";
 import OffCanvas from "@/components/common/off-canvas";
 import { openCartMini } from "@/redux/features/cartSlice";
@@ -20,8 +20,8 @@ import {
   Compare,
   Menu,
   Phone,
-  ShippingCar,
   Wishlist,
+  User,
 } from "@/svg";
 
 const Header = () => {
@@ -42,9 +42,9 @@ const Header = () => {
                 <div className="col-md-6">
                   <div className="tp-header-welcome d-flex align-items-center">
                     <span>
-                      <ShippingCar />
+                      <User />
                     </span>
-                    <p>FREE Express Shipping On Orders $570+</p>
+                    <p>We Have Numbers of Satisfied Clients 57k+</p>
                   </div>
                 </div>
                 <div className="col-md-6">
@@ -63,7 +63,7 @@ const Header = () => {
                 <div className="col-xl-2 col-lg-2 col-md-4 col-6">
                   <div className="logo">
                     <Link href="/">
-                      <Image src={logo} alt="logo" />
+                      <Image src={logo} alt="logo" width={90} />
                     </Link>
                   </div>
                 </div>
@@ -94,7 +94,7 @@ const Header = () => {
                         <span>
                           <CategoryMenu />
                         </span>
-                        All Departments
+                        All Services
                       </button>
                       <nav className="tp-category-menu-content">
                         <HeaderCategory
@@ -122,7 +122,7 @@ const Header = () => {
                       <div className="tp-header-contact-content">
                         <h5>Hotline:</h5>
                         <p>
-                          <a href="tel:966-595-035-008">+(966) 595 035 008</a>
+                          <a href="tel:+971542474720"> +(971) 54 247 4720</a>
                         </p>
                       </div>
                     </div>
@@ -145,7 +145,7 @@ const Header = () => {
               <div className="col-xl-3 col-lg-3 col-md-3 col-6">
                 <div className="logo">
                   <Link href="/">
-                    <Image src={logo} alt="logo" />
+                    <Image src={logo} alt="logo" width={90} />
                   </Link>
                 </div>
               </div>
@@ -158,11 +158,6 @@ const Header = () => {
               </div>
               <div className="col-xl-3 col-lg-3 col-md-3 col-6">
                 <div className="tp-header-action d-flex align-items-center justify-content-end ml-50">
-                  <div className="tp-header-action-item d-none d-lg-block">
-                    <Link href="/compare" className="tp-header-action-btn">
-                      <Compare />
-                    </Link>
-                  </div>
                   <div className="tp-header-action-item d-none d-lg-block">
                     <Link href="/wishlist" className="tp-header-action-btn">
                       <Wishlist />

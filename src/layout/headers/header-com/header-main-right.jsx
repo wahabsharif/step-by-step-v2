@@ -11,7 +11,7 @@ const HeaderMainRight = ({ setIsCanvasOpen }) => {
   const { user: userInfo } = useSelector((state) => state.auth);
   const { wishlist } = useSelector((state) => state.wishlist);
   const { quantity } = useCartInfo();
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   return (
     <div className="tp-header-main-right d-flex align-items-center justify-content-end">
       <div className="tp-header-login d-none d-lg-block">
@@ -53,11 +53,11 @@ const HeaderMainRight = ({ setIsCanvasOpen }) => {
         </div>
       </div>
       <div className="tp-header-action d-flex align-items-center ml-50">
-        <div className="tp-header-action-item d-none d-lg-block">
+        {/* <div className="tp-header-action-item d-none d-lg-block">
           <Link href="/compare" className="tp-header-action-btn">
             <Compare />
           </Link>
-        </div>
+        </div> */}
         <div className="tp-header-action-item d-none d-lg-block">
           <Link href="/wishlist" className="tp-header-action-btn">
             <Wishlist />

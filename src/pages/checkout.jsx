@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 // internal
 import SEO from "@/components/seo";
 import Wrapper from "@/layout/wrapper";
-import HeaderTwo from "@/layout/headers/header-2";
+import Header from "@/layout/headers/header";
 import Footer from "@/layout/footers/footer";
 import CommonBreadcrumb from "@/components/breadcrumb/common-breadcrumb";
 import CheckoutArea from "@/components/checkout/checkout-area";
@@ -20,7 +20,7 @@ const CheckoutPage = () => {
   return (
     <Wrapper>
       <SEO pageTitle="Checkout" />
-      <HeaderTwo />
+      <Header />
       <CommonBreadcrumb title="Checkout" subtitle="Checkout" bg_clr={true} />
       <CheckoutArea />
       <Footer />

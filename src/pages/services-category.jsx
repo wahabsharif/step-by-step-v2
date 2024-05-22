@@ -1,6 +1,6 @@
 import React from "react";
 import SEO from "@/components/seo";
-import HeaderTwo from "@/layout/headers/header-2";
+import Header from "@/layout/headers/header";
 import Footer from "@/layout/footers/footer";
 import Wrapper from "@/layout/wrapper";
 import ShopBreadcrumb from "@/components/breadcrumb/services-breadcrumb";
@@ -10,10 +10,10 @@ const CategoryPage = () => {
   return (
     <Wrapper>
       <SEO pageTitle="Shop Category" />
-      <HeaderTwo style_2={true} />
+      <Header />
       <ShopBreadcrumb title="Only Categories" subtitle="Only Categories" />
       <ShopCategoryArea />
-      <Footer primary_style={true} />
+      <Footer />
     </Wrapper>
   );
 };

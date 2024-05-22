@@ -8,7 +8,7 @@ import ProductArea from "@/components/products/services/product-area";
 import ProductGadgetArea from "@/components/products/services/product-gadget-area";
 import SEO from "@/components/seo";
 import Footer from "@/layout/footers/footer";
-import Header from "@/layout/headers/header-2";
+import Header from "@/layout/headers/header";
 import Wrapper from "@/layout/wrapper";
 
 export default function Home() {
