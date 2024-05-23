@@ -22,8 +22,8 @@
 
     & a {
       display: inline-block;
-      width: 180px;
-      height: 180px;
+      width: 80px;
+      height: 80px;
       background-color: var(--tp-grey-1);
       background-image: radial-gradient(
         95.56% 95.56% at 50% 50%,
@@ -39,8 +39,8 @@
       margin: auto;
 
       @media #{$lg, $md} {
-        width: 150px;
-        height: 150px;
+        width: 80px;
+        height: 80px;
       }
 
       & img {

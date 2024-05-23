@@ -49,8 +49,8 @@ const ServicesCategories = () => {
               <Image
                 src={item.img}
                 alt="product-category"
-                width={110}
-                height={110}
+                width={50}
+                height={50}
               />
             </a>
           </div>
@@ -72,7 +72,7 @@ const ServicesCategories = () => {
   return (
     <section className="tp-product-category pt-60 pb-15">
       <div className="container">
-        <div className="row row-cols-xl-4 row-cols-lg-4 row-cols-md-4">
+        <div className="row row-cols-xl-8 row-cols-lg-8 row-cols-md-8">
           {content}
         </div>
       </div>
