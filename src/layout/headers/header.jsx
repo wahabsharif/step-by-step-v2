@@ -158,25 +158,8 @@ const Header = () => {
               </div>
               <div className="col-xl-3 col-lg-3 col-md-3 col-6">
                 <div className="tp-header-action d-flex align-items-center justify-content-end ml-50">
-                  <div className="tp-header-action-item d-none d-lg-block">
-                    <Link href="/wishlist" className="tp-header-action-btn">
-                      <Wishlist />
-                      <span className="tp-header-action-badge">
-                        {wishlist.length}
-                      </span>
-                    </Link>
-                  </div>
-                  <div className="tp-header-action-item">
-                    <button
-                      onClick={() => dispatch(openCartMini())}
-                      type="button"
-                      className="tp-header-action-btn cartmini-open-btn"
-                    >
-                      <CartTwo />
-                      <span className="tp-header-action-badge">{quantity}</span>
-                    </button>
-                  </div>
-                  <div className="tp-header-action-item d-lg-none">
+                  <HeaderMainRight setIsCanvasOpen={setIsCanvasOpen} />
+                  {/* <div className="tp-header-action-item d-lg-none">
                     <button
                       onClick={() => setIsCanvasOpen(true)}
                       type="button"
@@ -184,7 +167,7 @@ const Header = () => {
                     >
                       <Menu />
                     </button>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

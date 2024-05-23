@@ -21,21 +21,7 @@ const HeaderSearchForm = () => {
             onChange={(e) => setSearchText(e.target.value)}
             value={searchText}
             type="text"
-            placeholder="Search for Products..."
-          />
-        </div>
-        <div className="tp-header-search-category">
-          <NiceSelect
-            options={[
-              { value: "Select Category", text: "Select Category" },
-              { value: "services", text: "services" },
-              // { value: "fashion", text: "fashion" },
-              // { value: "beauty", text: "beauty" },
-              // { value: "jewelry", text: "jewelry" },
-            ]}
-            defaultCurrent={0}
-            onChange={selectCategoryHandle}
-            name="Select Category"
+            placeholder="Search Your Desired Service..."
           />
         </div>
         <div className="tp-header-search-btn">
