@@ -1,18 +1,18 @@
 const menu_data = [
   {
-    id: 4,
+    id: 1,
     single_link: true,
     title: "Home",
     link: "/",
   },
+  // {
+  //   id: 4,
+  //   single_link: true,
+  //   title: "About Us",
+  //   link: "/about",
+  // },
   {
-    id: 4,
-    single_link: true,
-    title: "About Us",
-    link: "/about",
-  },
-  {
-    id: 5,
+    id: 2,
     single_link: true,
     title: "Services",
     link: "/services",
@@ -36,7 +36,7 @@ const menu_data = [
   //   ],
   // },
   {
-    id: 6,
+    id: 3,
     single_link: true,
     title: "Contact",
     link: "/contact",
@@ -48,19 +48,19 @@ export default menu_data;
 // mobile_menu
 export const mobile_menu = [
   {
-    id: 4,
+    id: 1,
     single_link: true,
     title: "Home",
     link: "/",
   },
+  // {
+  //   id: 4,
+  //   single_link: true,
+  //   title: "About",
+  //   link: "/about",
+  // },
   {
-    id: 4,
-    single_link: true,
-    title: "About",
-    link: "/about",
-  },
-  {
-    id: 5,
+    id: 2,
     single_link: true,
     title: "Services",
     link: "/services",
@@ -84,7 +84,7 @@ export const mobile_menu = [
   //   ],
   // },
   {
-    id: 6,
+    id: 3,
     single_link: true,
     title: "Contact",
     link: "/contact",
