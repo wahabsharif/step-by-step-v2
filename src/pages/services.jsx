@@ -152,6 +152,9 @@ const ShopPage = ({ query }) => {
 
     content = (
       <>
+        <h2 className="tp-title text-center tp-white-text pb-10 pt-30">
+          Find Your Desired Service
+        </h2>
         <ShopArea
           all_products={products.data}
           products={product_items}
