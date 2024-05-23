@@ -1,6 +1,6 @@
 import React from "react";
 import SEO from "@/components/seo";
-import HeaderTwo from "@/layout/headers/header-2";
+import Header from "@/layout/headers/header";
 import Wrapper from "@/layout/wrapper";
 import Footer from "@/layout/footers/footer";
 import SectionTitle from "@/components/blog/blog-grid/section-title";
@@ -10,10 +10,10 @@ const BlogGridPage = () => {
   return (
     <Wrapper>
       <SEO pageTitle="Blog Grid" />
-      <HeaderTwo style_2={true} />
-      <SectionTitle/>
-      <BlogGridArea/>
-      <Footer primary_style={true} />
+      <Header />
+      <SectionTitle />
+      <BlogGridArea />
+      <Footer />
     </Wrapper>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import SEO from "@/components/seo";
-import HeaderTwo from "@/layout/headers/header-2";
+import HeaderTwo from "@/layout/headers/header";
 import Wrapper from "@/layout/wrapper";
 import Footer from "@/layout/footers/footer";
 import BlogBreadcrumb from "@/components/breadcrumb/blog-breadcrumb";
@@ -11,8 +11,8 @@ const BlogPostBoxPage = () => {
     <Wrapper>
       <SEO pageTitle="Blog" />
       <HeaderTwo style_2={true} />
-      <BlogBreadcrumb/>
-      <BlogPostboxArea/>
+      <BlogBreadcrumb />
+      <BlogPostboxArea />
       <Footer primary_style={true} />
     </Wrapper>
   );

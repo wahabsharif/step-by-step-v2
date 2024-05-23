@@ -1,6 +1,6 @@
 import React from "react";
 import SEO from "@/components/seo";
-import HeaderTwo from "@/layout/headers/header-2";
+import Header from "@/layout/headers/header";
 import Wrapper from "@/layout/wrapper";
 import Footer from "@/layout/footers/footer";
 import BlogDetailsArea from "@/components/blog-details/blog-details-area";
@@ -10,13 +10,11 @@ const BlogDetailsPage = () => {
   return (
     <Wrapper>
       <SEO pageTitle="Blog Details" />
-      <HeaderTwo style_2={true} />
+      <Header />
       <BlogDetailsArea blog={blogData[4]} />
-      <Footer primary_style={true} />
+      <Footer />
     </Wrapper>
   );
 };
 
 export default BlogDetailsPage;
-
-
