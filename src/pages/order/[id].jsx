@@ -8,7 +8,7 @@ import SEO from "@/components/seo";
 import Wrapper from "@/layout/wrapper";
 import HeaderTwo from "@/layout/headers/header";
 import Footer from "@/layout/footers/footer";
-import logo from "@assets/img/logo/logo.svg";
+import logo from "@assets/img/logo/step-by-step-landscape-logo.svg";
 import ErrorMsg from "@/components/common/error-msg";
 import { useGetUserOrderByIdQuery } from "@/redux/features/order/orderApi";
 import PrdDetailsLoader from "@/components/loader/prd-details-loader";
@@ -65,10 +65,7 @@ const SingleOrder = ({ params }) => {
                       <div className="row align-items-end">
                         <div className="col-md-4 col-sm-6">
                           <div className="invoice__left">
-                            <Image src={logo} alt="logo" />
-                            <p>
-                              2879 Elk Creek Road <br /> Stone Mountain, Georgia{" "}
-                            </p>
+                            <Image src={logo} alt="logo" width={150} />
                           </div>
                         </div>
                         <div className="col-md-8 col-sm-6">
@@ -111,9 +108,9 @@ const SingleOrder = ({ params }) => {
                   <thead className="table-light">
                     <tr>
                       <th scope="col">SL</th>
-                      <th scope="col">Product Name</th>
+                      <th scope="col">Service Name</th>
                       <th scope="col">Quantity</th>
-                      <th scope="col">Item Price</th>
+                      <th scope="col">Price</th>
                       <th scope="col">Amount</th>
                     </tr>
                   </thead>
@@ -123,8 +120,8 @@ const SingleOrder = ({ params }) => {
                         <td>{i + 1}</td>
                         <td>{item.title}</td>
                         <td>{item.orderQuantity}</td>
-                        <td>${item.price}</td>
-                        <td>${item.price * item.orderQuantity}</td>
+                        <td>AED {item.price}</td>
+                        <td>AED {item.price * item.orderQuantity}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -132,7 +129,7 @@ const SingleOrder = ({ params }) => {
               </div>
               <div className="invoice__total pt-40 pb-10 alert-success pl-40 pr-40 mb-30">
                 <div className="row">
-                  <div className="col-lg-3 col-md-4">
+                  <div className="col-lg-5 col-md-5">
                     <div className="invoice__payment-method mb-30">
                       <h5 className="mb-0">Payment Method</h5>
                       <p className="tp-font-medium text-uppercase">
@@ -140,23 +137,19 @@ const SingleOrder = ({ params }) => {
                       </p>
                     </div>
                   </div>
-                  <div className="col-lg-3 col-md-4">
-                    <div className="invoice__shippint-cost mb-30">
-                      <h5 className="mb-0">Shipping Cost</h5>
-                      <p className="tp-font-medium">${shippingCost}</p>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 col-md-4">
+                  <div className="col-lg-2 col-md-2">
                     <div className="invoice__discount-cost mb-30">
                       <h5 className="mb-0">Discount</h5>
-                      <p className="tp-font-medium">${discount.toFixed(2)}</p>
+                      <p className="tp-font-medium">
+                        AED {discount.toFixed(2)}
+                      </p>
                     </div>
                   </div>
-                  <div className="col-lg-3 col-md-4">
+                  <div className="col-lg-5 col-md-5">
                     <div className="invoice__total-ammount mb-30">
                       <h5 className="mb-0">Total Ammount</h5>
                       <p className="tp-font-medium text-danger">
-                        <strong>${parseInt(totalAmount).toFixed(2)}</strong>
+                        <strong>AED {parseInt(totalAmount).toFixed(2)}</strong>
                       </p>
                     </div>
                   </div>

@@ -41,13 +41,13 @@ const ShopArea = ({ all_products, products, otherProps }) => {
                   maxPrice={maxPrice}
                 />
                 {/* status */}
-                <StatusFilter setCurrPage={setCurrPage} />
+                {/* <StatusFilter setCurrPage={setCurrPage} /> */}
                 {/* categories */}
                 <CategoryFilter setCurrPage={setCurrPage} />
                 {/* product rating */}
                 <TopRatedProducts />
                 {/* brand */}
-                <ProductBrand setCurrPage={setCurrPage} />
+                {/* <ProductBrand setCurrPage={setCurrPage} /> */}
                 {/* reset filter */}
                 <ResetButton />
               </div>

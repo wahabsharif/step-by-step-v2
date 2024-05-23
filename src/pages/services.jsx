@@ -2,13 +2,16 @@ import React, { useState, useEffect } from "react";
 import SEO from "@/components/seo";
 import Wrapper from "@/layout/wrapper";
 import Header from "@/layout/headers/header";
-import ShopBreadcrumb from "@/components/breadcrumb/services-breadcrumb";
+import HomeBanner from "@/components/home/home-banner";
 import ShopArea from "@/components/services/services-area";
 import { useGetAllProductsQuery } from "@/redux/features/productApi";
 import ErrorMsg from "@/components/common/error-msg";
 import Footer from "@/layout/footers/footer";
 import ShopFilterOffCanvas from "@/components/common/services-filter-offcanvas";
 import ShopLoader from "@/components/loader/services/services-loader";
+import CtaArea from "@/components/cta/cta-area";
+import Areas from "@/components/home/areas";
+import ServicesCategories from "@/components/categories/services-categories";
 
 const ShopPage = ({ query }) => {
   const { data: products, isError, isLoading } = useGetAllProductsQuery();
@@ -165,8 +168,11 @@ const ShopPage = ({ query }) => {
     <Wrapper>
       <SEO pageTitle="Services" />
       <Header />
-      <ShopBreadcrumb title="Services" subtitle="Services" />
+      <HomeBanner />
+      <ServicesCategories />
+      <Areas />
       {content}
+      <CtaArea />
       <Footer />
     </Wrapper>
   );
