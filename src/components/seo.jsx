@@ -21,6 +21,14 @@ const SEO = ({ pageTitle }) => (
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
       />
+      <meta
+        property="og:image"
+        content="/assets/img/step-by-step-web-preview.png"
+      />
+      <meta
+        name="twitter:image"
+        content="/assets/img/step-by-step-web-preview.png"
+      />
       <link rel="icon" href="/favicon.png" />
     </Head>
   </>
