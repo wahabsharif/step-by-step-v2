@@ -79,14 +79,14 @@ const ContactArea = () => {
                         </h4>
 
                         <div className="tp-contact-social-icon">
-                          <a href="#">
+                          <a href="https://www.facebook.com/profile.php?id=61559838301828&mibextid=LQQJ4d">
                             <i className="fa-brands fa-facebook-f"></i>
                           </a>
-                          <a href="#">
-                            <i className="fa-brands fa-twitter"></i>
+                          <a href="https://u.wechat.com/kGIzTamdjqG4s9SeVICTp1M">
+                            <i className="fa-brands fa-weixin"></i>
                           </a>
-                          <a href="#">
-                            <i className="fa-brands fa-linkedin-in"></i>
+                          <a href="https://wa.me/+971542474720?text=urlencodedtext">
+                            <i className="fa-brands fa-whatsapp"></i>
                           </a>
                         </div>
                       </div>
