@@ -16,7 +16,6 @@ const CheckoutOrderArea = ({ checkoutData }) => {
     errors,
     showCard,
     setShowCard,
-    shippingCost,
     discountAmount,
   } = checkoutData;
   const { cart_products } = useSelector((state) => state.cart);
@@ -111,7 +110,7 @@ const CheckoutOrderArea = ({ checkoutData }) => {
         </ul>
       </div>
       <div className="tp-checkout-payment">
-        <div className="tp-checkout-payment-item">
+        {/* <div className="tp-checkout-payment-item">
           <input
             {...register(`payment`, {
               required: `Payment Option is required!`,
@@ -151,7 +150,7 @@ const CheckoutOrderArea = ({ checkoutData }) => {
             </div>
           )}
           <ErrorMsg msg={errors?.payment?.message} />
-        </div>
+        </div> */}
         <div className="tp-checkout-payment-item">
           <input
             {...register(`payment`, {
