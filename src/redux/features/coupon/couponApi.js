@@ -5,7 +5,7 @@ export const authApi = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     // get offer coupon
     getOfferCoupons: builder.query({
-      query: () => `https://sbs-server-mu.vercel.app/api/coupon`,
+      query: () => `https://sbs-server-v2.vercel.app/api/coupon`,
       providesTags: ["Coupon"],
       keepUnusedDataFor: 600,
     }),

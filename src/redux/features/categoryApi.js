@@ -5,17 +5,17 @@ export const categoryApi = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     addCategory: builder.mutation({
       query: (data) => ({
-        url: "https://sbs-server-mu.vercel.app/api/category/add",
+        url: "https://sbs-server-v2.vercel.app/api/category/add",
         method: "POST",
         body: data,
       }),
     }),
     getShowCategory: builder.query({
-      query: () => `https://sbs-server-mu.vercel.app/api/category/show`,
+      query: () => `https://sbs-server-v2.vercel.app/api/category/show`,
     }),
     getProductTypeCategory: builder.query({
       query: (type) =>
-        `https://sbs-server-mu.vercel.app/api/category/show/${type}`,
+        `https://sbs-server-v2.vercel.app/api/category/show/${type}`,
     }),
   }),
 });

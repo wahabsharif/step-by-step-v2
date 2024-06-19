@@ -7,7 +7,7 @@ export const authApi = apiSlice.injectEndpoints({
     // createPaymentIntent
     createPaymentIntent: builder.mutation({
       query: (data) => ({
-        url: "https://sbs-server-mu.vercel.app/api/order/create-payment-intent",
+        url: "https://sbs-server-v2.vercel.app/api/order/create-payment-intent",
         method: "POST",
         body: data,
       }),
@@ -24,7 +24,7 @@ export const authApi = apiSlice.injectEndpoints({
     // saveOrder
     saveOrder: builder.mutation({
       query: (data) => ({
-        url: "https://sbs-server-mu.vercel.app/api/order/saveOrder",
+        url: "https://sbs-server-v2.vercel.app/api/order/saveOrder",
         method: "POST",
         body: data,
       }),
@@ -44,13 +44,13 @@ export const authApi = apiSlice.injectEndpoints({
     }),
     // getUserOrders
     getUserOrders: builder.query({
-      query: () => `https://sbs-server-mu.vercel.app/api/user-order`,
+      query: () => `https://sbs-server-v2.vercel.app/api/user-order`,
       providesTags: ["UserOrders"],
       keepUnusedDataFor: 600,
     }),
     // getUserOrders
     getUserOrderById: builder.query({
-      query: (id) => `https://sbs-server-mu.vercel.app/api/user-order/${id}`,
+      query: (id) => `https://sbs-server-v2.vercel.app/api/user-order/${id}`,
       providesTags: (result, error, arg) => [{ type: "UserOrder", id: arg }],
       keepUnusedDataFor: 600,
     }),

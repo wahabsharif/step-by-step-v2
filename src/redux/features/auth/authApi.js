@@ -7,7 +7,7 @@ export const authApi = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     registerUser: builder.mutation({
       query: (data) => ({
-        url: "https://sbs-server-mu.vercel.app/api/user/signup",
+        url: "https://sbs-server-v2.vercel.app/api/user/signup",
         method: "POST",
         body: data,
       }),
@@ -15,7 +15,7 @@ export const authApi = apiSlice.injectEndpoints({
     // signUpProvider
     signUpProvider: builder.mutation({
       query: (token) => ({
-        url: `https://sbs-server-mu.vercel.app/api/user/register/${token}`,
+        url: `https://sbs-server-v2.vercel.app/api/user/register/${token}`,
         method: "POST",
       }),
 
@@ -46,7 +46,7 @@ export const authApi = apiSlice.injectEndpoints({
     // login
     loginUser: builder.mutation({
       query: (data) => ({
-        url: "https://sbs-server-mu.vercel.app/api/user/login",
+        url: "https://sbs-server-v2.vercel.app/api/user/login",
         method: "POST",
         body: data,
       }),
@@ -77,7 +77,7 @@ export const authApi = apiSlice.injectEndpoints({
     }),
     // get me
     getUser: builder.query({
-      query: () => "https://sbs-server-mu.vercel.app/api/user/me",
+      query: () => "https://sbs-server-v2.vercel.app/api/user/me",
 
       async onQueryStarted(arg, { queryFulfilled, dispatch }) {
         try {
@@ -95,7 +95,7 @@ export const authApi = apiSlice.injectEndpoints({
     // confirmEmail
     confirmEmail: builder.query({
       query: (token) =>
-        `https://sbs-server-mu.vercel.app/api/user/confirmEmail/${token}`,
+        `https://sbs-server-v2.vercel.app/api/user/confirmEmail/${token}`,
 
       async onQueryStarted(arg, { queryFulfilled, dispatch }) {
         try {
@@ -124,7 +124,7 @@ export const authApi = apiSlice.injectEndpoints({
     // reset password
     resetPassword: builder.mutation({
       query: (data) => ({
-        url: "https://sbs-server-mu.vercel.app/api/user/forget-password",
+        url: "https://sbs-server-v2.vercel.app/api/user/forget-password",
         method: "PATCH",
         body: data,
       }),
@@ -132,7 +132,7 @@ export const authApi = apiSlice.injectEndpoints({
     // confirmForgotPassword
     confirmForgotPassword: builder.mutation({
       query: (data) => ({
-        url: "https://sbs-server-mu.vercel.app/api/user/confirm-forget-password",
+        url: "https://sbs-server-v2.vercel.app/api/user/confirm-forget-password",
         method: "PATCH",
         body: data,
       }),
@@ -140,7 +140,7 @@ export const authApi = apiSlice.injectEndpoints({
     // change password
     changePassword: builder.mutation({
       query: (data) => ({
-        url: "https://sbs-server-mu.vercel.app/api/user/change-password",
+        url: "https://sbs-server-v2.vercel.app/api/user/change-password",
         method: "PATCH",
         body: data,
       }),
@@ -148,7 +148,7 @@ export const authApi = apiSlice.injectEndpoints({
     // updateProfile password
     updateProfile: builder.mutation({
       query: ({ id, ...data }) => ({
-        url: `https://sbs-server-mu.vercel.app/api/user/update-user/${id}`,
+        url: `https://sbs-server-v2.vercel.app/api/user/update-user/${id}`,
         method: "PUT",
         body: data,
       }),
